@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button href='/home'>home</ion-button>
+
+
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime id="date" display-format="MM/YYYY" picker-format="DD MMMM YYYY"></ion-datetime>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Fixed Label</ion-label>
+    <ion-input id="a" type="number"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="onClick()">Test Date</ion-button>
+
+  <ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles"
+        refreshingText="Refreshing...">
+      </ion-refresher-content>
+    </ion-refresher>
+  </ion-content>
+</ion-content>

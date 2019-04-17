@@ -8,7 +8,23 @@
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-button href='/aboutus'>About us</ion-button>
+    <ion-button href='/contact'>Contact us</ion-button>
+    <ion-button (click)="presentActionSheet()">Hello action sheet</ion-button>
+  </div>
+
+  <div>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime display-format="MM/YYYY" picker-format="DD MMMM YYYY"></ion-datetime>
+    </ion-item>
+  </div>
+
+  <div>
+    <ion-item>
+      <ion-button (click) = "presentAlert()">Alert</ion-button>
+     
+      <ion-button color="tertiary">Tertiary</ion-button>
+    </ion-item>
   </div>
 </ion-content>
