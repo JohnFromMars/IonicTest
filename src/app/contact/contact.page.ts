@@ -18,4 +18,13 @@ export class ContactPage implements OnInit {
     var date = document.getElementById("a");
     console.log(date);
   }
+
+  doRefresh(event) {
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
 }

@@ -10,7 +10,7 @@ export class HomePage {
   constructor(public actionSheetController: ActionSheetController, public alertController: AlertController) { }
 
   /**
-   * action sheet function for home page action sheet button 
+   * action sheet function for home page action sheet button and alert function 
    */
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
